@@ -54,13 +54,6 @@
                 android:tag="+"
                 android:text="+" />
 
-            <Button
-                android:id="@+id/button17"
-                android:layout_width="wrap_content"
-                android:layout_height="48dp"
-                android:onClick="onTouch"
-                android:tag="c"
-                android:text="c" />
         </TableRow>
 
         <TableRow
@@ -172,6 +165,19 @@
                 android:onClick="onTouch"
                 android:tag="/"
                 android:text="/" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button17"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:onClick="onTouch"
+                android:tag="c"
+                android:text="c" />
         </TableRow>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

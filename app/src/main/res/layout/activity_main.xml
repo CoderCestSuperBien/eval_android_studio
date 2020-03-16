@@ -9,11 +9,18 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#FFFFFF"
         android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="474dp"
+            app:srcCompat="@drawable/titre" />
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="192dp" >
+            android:layout_height="wrap_content">
 
             <Button
                 android:id="@+id/button18"
@@ -21,6 +28,20 @@
                 android:layout_height="wrap_content"
                 android:onClick="gotoCalculatrice"
                 android:text="Calculatrice" />
+
+            <Button
+                android:id="@+id/button19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="gotoTva"
+                android:text="TVA" />
+
+            <Button
+                android:id="@+id/button20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="gotoColor"
+                android:text="Couleurs" />
         </TableRow>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

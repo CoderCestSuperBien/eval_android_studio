@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this,CalculatriceActivity.class);
         startActivity(intent);
     }
-/*
+
     public void gotoTva(View v){
         Intent intent = new Intent(this,TvaActivity.class);
         startActivity(intent);
@@ -29,5 +29,5 @@ public class MainActivity extends AppCompatActivity {
     public void gotoColor(View v){
         Intent intent = new Intent(this, ColorActivity.class);
         startActivity(intent);
-    }*/
+    }
 }
