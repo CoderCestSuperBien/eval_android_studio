@@ -26,18 +26,18 @@ public class ColorActivity extends AppCompatActivity {
         View ecran = findViewById(R.id.ecranCouleur);
         ecran.setBackgroundColor(Color.parseColor(String.format("#%02X%02X%02X", rgb[0], rgb[1], rgb[2])));
 
-        onChangePutColor(r,rgb,hsv,ecran);
-        onChangePutColor(g,rgb,hsv,ecran);
-        onChangePutColor(b,rgb,hsv,ecran);
-        onChangePutColor(h,rgb,hsv,ecran);
-        onChangePutColor(s,rgb,hsv,ecran);
-        onChangePutColor(v,rgb,hsv,ecran);
+        onSeekbarChangeUpdateColor(r,rgb,hsv,ecran);
+        onSeekbarChangeUpdateColor(g,rgb,hsv,ecran);
+        onSeekbarChangeUpdateColor(b,rgb,hsv,ecran);
+        onSeekbarChangeUpdateColor(h,rgb,hsv,ecran);
+        onSeekbarChangeUpdateColor(s,rgb,hsv,ecran);
+        onSeekbarChangeUpdateColor(v,rgb,hsv,ecran);
 
 
     }
 
 
-    public void onChangePutColor (SeekBar seekBar , final int[] rgb , final float[] hsv , final View ecran){
+    public void onSeekbarChangeUpdateColor (SeekBar seekBar , final int[] rgb , final float[] hsv , final View ecran){
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
